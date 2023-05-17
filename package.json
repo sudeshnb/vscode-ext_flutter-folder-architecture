@@ -2,9 +2,10 @@
   "name": "onyxsio",
   "displayName": "Onyxsio",
   "description": "Add new Features and Core easily with well-structured directories.",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "publisher": "sudeshbandara",
   "license": "MIT",
+  "pricing": "Free",
   "repository": {
     "type": "git",
     "url": "https://github.com/sudeshnb/vscode-ext_flutter-folder-architecture.git"

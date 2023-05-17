@@ -97,12 +97,23 @@ export async function generateCoreArchitecture (targetDirectory: string) {
 	//
 		if (!existsSync(coreDirectoryPath)) {
 		await createDirectories(coreDirectoryPath, [
-			"Network",
+			"Animation",
+			"Api",
+			"Config",
+			"Constants",
+			"Keys",
+			"Error",
+      "Network",
 			"Routes",
 			"Theme",
-			"Utility",
+			"Utils",
 			"Usecases",
-			"Error",
+			"Widgets",
+      "Utils",
+			"Localization",
+			"Middleware",
+      'Events',
+      'Global'
 			]);	
 			window.showInformationMessage(`Successfully Generated Core Folder.`);
 		}
@@ -202,7 +213,6 @@ export function promptForFeatureName (): Thenable<string | undefined> {
 export async function generateFeatureArchitecture (
   featureName: string,
   targetDirectory: string
-  
 ) {
   // Create the features directory if its does not exist yet
   const featuresDirectoryPath = getFeaturesDirectoryPath(targetDirectory);
@@ -220,7 +230,7 @@ export async function generateFeatureArchitecture (
     "Sources",
     "Models",
     "Repositories",
-	"Usecases",
+	  "Usecases",
   ]);
 
 //   // Create the domain layer
@@ -241,7 +251,6 @@ export async function generateFeatureArchitecture (
     "Pages",
     "Widgets",
   ]);
-
   
 }
 
